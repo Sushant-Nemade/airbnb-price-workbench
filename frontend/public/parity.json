@@ -1,0 +1,392 @@
+[
+  {
+    "input": {
+      "borough": "Bronx",
+      "room_type": "Entire home/apt",
+      "latitude": 40.85,
+      "longitude": -73.87,
+      "minimum_nights": 3,
+      "number_of_reviews": 0,
+      "reviews_per_month": 0.0,
+      "availability_365": 180
+    },
+    "expected_price": 128.83078002929688
+  },
+  {
+    "input": {
+      "borough": "Bronx",
+      "room_type": "Entire home/apt",
+      "latitude": 40.85,
+      "longitude": -73.87,
+      "minimum_nights": 3,
+      "number_of_reviews": 42,
+      "reviews_per_month": 1.5,
+      "availability_365": 180
+    },
+    "expected_price": 97.29729461669922
+  },
+  {
+    "input": {
+      "borough": "Bronx",
+      "room_type": "Private room",
+      "latitude": 40.85,
+      "longitude": -73.87,
+      "minimum_nights": 3,
+      "number_of_reviews": 0,
+      "reviews_per_month": 0.0,
+      "availability_365": 180
+    },
+    "expected_price": 69.60655212402344
+  },
+  {
+    "input": {
+      "borough": "Bronx",
+      "room_type": "Private room",
+      "latitude": 40.85,
+      "longitude": -73.87,
+      "minimum_nights": 3,
+      "number_of_reviews": 42,
+      "reviews_per_month": 1.5,
+      "availability_365": 180
+    },
+    "expected_price": 58.348167419433594
+  },
+  {
+    "input": {
+      "borough": "Bronx",
+      "room_type": "Shared room",
+      "latitude": 40.85,
+      "longitude": -73.87,
+      "minimum_nights": 3,
+      "number_of_reviews": 0,
+      "reviews_per_month": 0.0,
+      "availability_365": 180
+    },
+    "expected_price": 72.51602935791016
+  },
+  {
+    "input": {
+      "borough": "Bronx",
+      "room_type": "Shared room",
+      "latitude": 40.85,
+      "longitude": -73.87,
+      "minimum_nights": 3,
+      "number_of_reviews": 42,
+      "reviews_per_month": 1.5,
+      "availability_365": 180
+    },
+    "expected_price": 47.83588409423828
+  },
+  {
+    "input": {
+      "borough": "Brooklyn",
+      "room_type": "Entire home/apt",
+      "latitude": 40.695,
+      "longitude": -73.98,
+      "minimum_nights": 3,
+      "number_of_reviews": 0,
+      "reviews_per_month": 0.0,
+      "availability_365": 180
+    },
+    "expected_price": 257.6031188964844
+  },
+  {
+    "input": {
+      "borough": "Brooklyn",
+      "room_type": "Entire home/apt",
+      "latitude": 40.695,
+      "longitude": -73.98,
+      "minimum_nights": 3,
+      "number_of_reviews": 42,
+      "reviews_per_month": 1.5,
+      "availability_365": 180
+    },
+    "expected_price": 201.61968994140625
+  },
+  {
+    "input": {
+      "borough": "Brooklyn",
+      "room_type": "Private room",
+      "latitude": 40.695,
+      "longitude": -73.98,
+      "minimum_nights": 3,
+      "number_of_reviews": 0,
+      "reviews_per_month": 0.0,
+      "availability_365": 180
+    },
+    "expected_price": 107.59598541259766
+  },
+  {
+    "input": {
+      "borough": "Brooklyn",
+      "room_type": "Private room",
+      "latitude": 40.695,
+      "longitude": -73.98,
+      "minimum_nights": 3,
+      "number_of_reviews": 42,
+      "reviews_per_month": 1.5,
+      "availability_365": 180
+    },
+    "expected_price": 89.41224670410156
+  },
+  {
+    "input": {
+      "borough": "Brooklyn",
+      "room_type": "Shared room",
+      "latitude": 40.695,
+      "longitude": -73.98,
+      "minimum_nights": 3,
+      "number_of_reviews": 0,
+      "reviews_per_month": 0.0,
+      "availability_365": 180
+    },
+    "expected_price": 80.89546966552734
+  },
+  {
+    "input": {
+      "borough": "Brooklyn",
+      "room_type": "Shared room",
+      "latitude": 40.695,
+      "longitude": -73.98,
+      "minimum_nights": 3,
+      "number_of_reviews": 42,
+      "reviews_per_month": 1.5,
+      "availability_365": 180
+    },
+    "expected_price": 59.51544189453125
+  },
+  {
+    "input": {
+      "borough": "Manhattan",
+      "room_type": "Entire home/apt",
+      "latitude": 40.76,
+      "longitude": -73.98,
+      "minimum_nights": 3,
+      "number_of_reviews": 0,
+      "reviews_per_month": 0.0,
+      "availability_365": 180
+    },
+    "expected_price": 281.6229248046875
+  },
+  {
+    "input": {
+      "borough": "Manhattan",
+      "room_type": "Entire home/apt",
+      "latitude": 40.76,
+      "longitude": -73.98,
+      "minimum_nights": 3,
+      "number_of_reviews": 42,
+      "reviews_per_month": 1.5,
+      "availability_365": 180
+    },
+    "expected_price": 242.13702392578125
+  },
+  {
+    "input": {
+      "borough": "Manhattan",
+      "room_type": "Private room",
+      "latitude": 40.76,
+      "longitude": -73.98,
+      "minimum_nights": 3,
+      "number_of_reviews": 0,
+      "reviews_per_month": 0.0,
+      "availability_365": 180
+    },
+    "expected_price": 163.9639892578125
+  },
+  {
+    "input": {
+      "borough": "Manhattan",
+      "room_type": "Private room",
+      "latitude": 40.76,
+      "longitude": -73.98,
+      "minimum_nights": 3,
+      "number_of_reviews": 42,
+      "reviews_per_month": 1.5,
+      "availability_365": 180
+    },
+    "expected_price": 114.83930969238281
+  },
+  {
+    "input": {
+      "borough": "Manhattan",
+      "room_type": "Shared room",
+      "latitude": 40.76,
+      "longitude": -73.98,
+      "minimum_nights": 3,
+      "number_of_reviews": 0,
+      "reviews_per_month": 0.0,
+      "availability_365": 180
+    },
+    "expected_price": 102.85530853271484
+  },
+  {
+    "input": {
+      "borough": "Manhattan",
+      "room_type": "Shared room",
+      "latitude": 40.76,
+      "longitude": -73.98,
+      "minimum_nights": 3,
+      "number_of_reviews": 42,
+      "reviews_per_month": 1.5,
+      "availability_365": 180
+    },
+    "expected_price": 86.21186828613281
+  },
+  {
+    "input": {
+      "borough": "Queens",
+      "room_type": "Entire home/apt",
+      "latitude": 40.73,
+      "longitude": -73.82,
+      "minimum_nights": 3,
+      "number_of_reviews": 0,
+      "reviews_per_month": 0.0,
+      "availability_365": 180
+    },
+    "expected_price": 175.22540283203125
+  },
+  {
+    "input": {
+      "borough": "Queens",
+      "room_type": "Entire home/apt",
+      "latitude": 40.73,
+      "longitude": -73.82,
+      "minimum_nights": 3,
+      "number_of_reviews": 42,
+      "reviews_per_month": 1.5,
+      "availability_365": 180
+    },
+    "expected_price": 126.88494110107422
+  },
+  {
+    "input": {
+      "borough": "Queens",
+      "room_type": "Private room",
+      "latitude": 40.73,
+      "longitude": -73.82,
+      "minimum_nights": 3,
+      "number_of_reviews": 0,
+      "reviews_per_month": 0.0,
+      "availability_365": 180
+    },
+    "expected_price": 74.50005340576172
+  },
+  {
+    "input": {
+      "borough": "Queens",
+      "room_type": "Private room",
+      "latitude": 40.73,
+      "longitude": -73.82,
+      "minimum_nights": 3,
+      "number_of_reviews": 42,
+      "reviews_per_month": 1.5,
+      "availability_365": 180
+    },
+    "expected_price": 55.181007385253906
+  },
+  {
+    "input": {
+      "borough": "Queens",
+      "room_type": "Shared room",
+      "latitude": 40.73,
+      "longitude": -73.82,
+      "minimum_nights": 3,
+      "number_of_reviews": 0,
+      "reviews_per_month": 0.0,
+      "availability_365": 180
+    },
+    "expected_price": 59.321353912353516
+  },
+  {
+    "input": {
+      "borough": "Queens",
+      "room_type": "Shared room",
+      "latitude": 40.73,
+      "longitude": -73.82,
+      "minimum_nights": 3,
+      "number_of_reviews": 42,
+      "reviews_per_month": 1.5,
+      "availability_365": 180
+    },
+    "expected_price": 52.53569412231445
+  },
+  {
+    "input": {
+      "borough": "Staten Island",
+      "room_type": "Entire home/apt",
+      "latitude": 40.58,
+      "longitude": -74.15,
+      "minimum_nights": 3,
+      "number_of_reviews": 0,
+      "reviews_per_month": 0.0,
+      "availability_365": 180
+    },
+    "expected_price": 112.73367309570312
+  },
+  {
+    "input": {
+      "borough": "Staten Island",
+      "room_type": "Entire home/apt",
+      "latitude": 40.58,
+      "longitude": -74.15,
+      "minimum_nights": 3,
+      "number_of_reviews": 42,
+      "reviews_per_month": 1.5,
+      "availability_365": 180
+    },
+    "expected_price": 91.36038970947266
+  },
+  {
+    "input": {
+      "borough": "Staten Island",
+      "room_type": "Private room",
+      "latitude": 40.58,
+      "longitude": -74.15,
+      "minimum_nights": 3,
+      "number_of_reviews": 0,
+      "reviews_per_month": 0.0,
+      "availability_365": 180
+    },
+    "expected_price": 64.23164367675781
+  },
+  {
+    "input": {
+      "borough": "Staten Island",
+      "room_type": "Private room",
+      "latitude": 40.58,
+      "longitude": -74.15,
+      "minimum_nights": 3,
+      "number_of_reviews": 42,
+      "reviews_per_month": 1.5,
+      "availability_365": 180
+    },
+    "expected_price": 49.101280212402344
+  },
+  {
+    "input": {
+      "borough": "Staten Island",
+      "room_type": "Shared room",
+      "latitude": 40.58,
+      "longitude": -74.15,
+      "minimum_nights": 3,
+      "number_of_reviews": 0,
+      "reviews_per_month": 0.0,
+      "availability_365": 180
+    },
+    "expected_price": 47.90949249267578
+  },
+  {
+    "input": {
+      "borough": "Staten Island",
+      "room_type": "Shared room",
+      "latitude": 40.58,
+      "longitude": -74.15,
+      "minimum_nights": 3,
+      "number_of_reviews": 42,
+      "reviews_per_month": 1.5,
+      "availability_365": 180
+    },
+    "expected_price": 34.43817138671875
+  }
+]

@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "trained_at": "2026-10-19T22:51:55.109297+00:00",
+  "dataset": {
+    "name": "New York City Airbnb Open Data",
+    "publisher": "Dgomonov on Kaggle; underlying collection credited to Inside Airbnb",
+    "source": "https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data",
+    "metadata_url": "https://www.kaggle.com/api/v1/datasets/view/dgomonov/new-york-city-airbnb-open-data",
+    "download": "https://www.kaggle.com/api/v1/datasets/download/dgomonov/new-york-city-airbnb-open-data?datasetVersionNumber=3",
+    "version": 3,
+    "snapshot_year": 2019,
+    "license": "CC0: Public Domain (publisher metadata)",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "csv": "AB_NYC_2019.csv",
+    "sha256": "e420db40ff10fcb40efc1b5b1648ee0b18a48f4e4537155cecc59fe95d18783a",
+    "raw_data_redistributed": false,
+    "source_rows": 48895,
+    "eligible_rows": 47924,
+    "excluded_rows": 971
+  },
+  "feature_names": [
+    "borough:Bronx",
+    "borough:Brooklyn",
+    "borough:Manhattan",
+    "borough:Queens",
+    "borough:Staten Island",
+    "room:Entire home/apt",
+    "room:Private room",
+    "room:Shared room",
+    "latitude",
+    "longitude",
+    "minimum_nights",
+    "number_of_reviews",
+    "reviews_per_month",
+    "availability_365"
+  ],
+  "model": "neural_log",
+  "evaluation": {
+    "selection": {
+      "ridge_log": {
+        "mae_usd": 50.90507912368852,
+        "rmse_usd": 97.7831724032622,
+        "r2": 0.3030313686773438,
+        "median_absolute_error_usd": 27.05731201171875
+      },
+      "neural_log": {
+        "mae_usd": 47.77984657664796,
+        "rmse_usd": 93.64826904561485,
+        "r2": 0.36072974859662055,
+        "median_absolute_error_usd": 23.918655395507812
+      }
+    },
+    "test": {
+      "mae_usd": 48.80133809467795,
+      "rmse_usd": 90.71226274671206,
+      "r2": 0.35660338093797717,
+      "median_absolute_error_usd": 26.074256896972656
+    },
+    "baselines": {
+      "global_median": {
+        "mae_usd": 69.50606316976875,
+        "rmse_usd": 117.89997325828128,
+        "r2": -0.08686145546798163,
+        "median_absolute_error_usd": 45.0
+      },
+      "borough_room_median": {
+        "mae_usd": 52.662366046249296,
+        "rmse_usd": 98.95648876186294,
+        "r2": 0.23434111263022328,
+        "median_absolute_error_usd": 30.0
+      }
+    },
+    "interval_coverage": 0.9080654258319233,
+    "mean_interval_width_usd": 201.8108367919922,
+    "slices": [
+      {
+        "feature": "neighbourhood_group",
+        "value": "Bronx",
+        "rows": 205,
+        "mae_usd": 32.25070985003215,
+        "rmse_usd": 65.7013418630908,
+        "r2": 0.24841820796485947,
+        "median_absolute_error_usd": 16.956695556640625,
+        "interval_coverage": 0.9609756097560975
+      },
+      {
+        "feature": "neighbourhood_group",
+        "value": "Brooklyn",
+        "rows": 2981,
+        "mae_usd": 40.63172060721115,
+        "rmse_usd": 74.88912412430032,
+        "r2": 0.36802858947483563,
+        "median_absolute_error_usd": 22.263687133789062,
+        "interval_coverage": 0.9332438778933244
+      },
+      {
+        "feature": "neighbourhood_group",
+        "value": "Manhattan",
+        "rows": 3068,
+        "mae_usd": 62.2947328249199,
+        "rmse_usd": 110.2833050169714,
+        "r2": 0.2818524420389308,
+        "median_absolute_error_usd": 35.65024948120117,
+        "interval_coverage": 0.8670143415906127
+      },
+      {
+        "feature": "neighbourhood_group",
+        "value": "Queens",
+        "rows": 786,
+        "mae_usd": 32.09466664845707,
+        "rmse_usd": 63.77365376536778,
+        "r2": 0.24611581384759307,
+        "median_absolute_error_usd": 18.284914016723633,
+        "interval_coverage": 0.9580152671755725
+      },
+      {
+        "feature": "neighbourhood_group",
+        "value": "Staten Island",
+        "rows": 52,
+        "mae_usd": 38.805515876183144,
+        "rmse_usd": 68.4378035331715,
+        "r2": 0.23219294050834194,
+        "median_absolute_error_usd": 19.149070739746094,
+        "interval_coverage": 0.9230769230769231
+      },
+      {
+        "feature": "room_type",
+        "value": "Entire home/apt",
+        "rows": 3691,
+        "mae_usd": 68.87749896466781,
+        "rmse_usd": 112.58855807107862,
+        "r2": 0.17346502551785026,
+        "median_absolute_error_usd": 44.11192321777344,
+        "interval_coverage": 0.8488214575995665
+      },
+      {
+        "feature": "room_type",
+        "value": "Private room",
+        "rows": 3208,
+        "mae_usd": 27.202342343746576,
+        "rmse_usd": 58.9990043665344,
+        "r2": 0.17755893477401985,
+        "median_absolute_error_usd": 15.968664169311523,
+        "interval_coverage": 0.9716334164588528
+      },
+      {
+        "feature": "room_type",
+        "value": "Shared room",
+        "rows": 193,
+        "mae_usd": 23.871123575793646,
+        "rmse_usd": 45.72841430191778,
+        "r2": 0.22868075210284822,
+        "median_absolute_error_usd": 17.450328826904297,
+        "interval_coverage": 0.9844559585492227
+      }
+    ],
+    "onnx_sklearn_max_error_usd": 0.0003662109375
+  },
+  "splits": {
+    "train": {
+      "rows": 26650,
+      "hosts": 20232,
+      "membership_sha256": "447a67f9d5000aa026dc01478f347127629a60e365ae8c89ebd85b03f95b23ac"
+    },
+    "selection": {
+      "rows": 6877,
+      "hosts": 5518,
+      "membership_sha256": "f679cb73dd9eb393a4ea444246d5bed0345342c7ed830e4d45a09294956ec9ce"
+    },
+    "calibration": {
+      "rows": 7305,
+      "hosts": 5518,
+      "membership_sha256": "64db7a59d13ee270c56e140e12187d176cafc5044c1c83e41db3e86509adda25"
+    },
+    "test": {
+      "rows": 7092,
+      "hosts": 5518,
+      "membership_sha256": "488211567225f146a39638ed112ded61df4527cd84ba4a77917eeaacd0a06ec2"
+    }
+  },
+  "interval": {
+    "target_coverage": 0.9,
+    "absolute_residual_radius_usd": 111.35283660888672,
+    "method": "split conformal; host-disjoint calibration; finite-sample higher quantile",
+    "limitations": "Marginal historical coverage only; repeated listings within hosts are dependent. No group-conditional, temporal or current-market guarantee."
+  },
+  "scope": {
+    "year": 2019,
+    "city": "New York City",
+    "currency": "USD",
+    "price_min": 5,
+    "price_max": 1000,
+    "minimum_nights_max": 30,
+    "target": "Advertised nightly listing price, not paid booking revenue",
+    "clipping": "Predictions and intervals clipped to declared 5-1000 USD filtered scope"
+  },
+  "libraries": {
+    "python": "3.13.16",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.4",
+    "onnxruntime": "1.31.0"
+  },
+  "training_warnings": {
+    "ridge_log": [],
+    "neural_log": []
+  },
+  "limitations": [
+    "Historical 2019 snapshot; not a live Airbnb quote or current pricing recommendation.",
+    "Evaluation is host-disjoint, not a temporal or geographic holdout.",
+    "Only eligible NYC listings priced 5-1000 USD with minimum stays up to 30 nights were modeled.",
+    "Excludes taxes, cleaning/service fees, availability verification and booking transactions.",
+    "Host/listing identifiers, names and review timestamps are not prediction features or served records.",
+    "Coordinates and borough must refer to the same location; bounds alone do not verify address or zoning.",
+    "The uncertainty band is calibrated on historical residuals, not a guaranteed individual price range."
+  ],
+  "model_sha256": "0da70f4d3ebceb8c57e82048e37c8d9c2dfc6a9fd4263f2c1ce902069529ed6e"
+}

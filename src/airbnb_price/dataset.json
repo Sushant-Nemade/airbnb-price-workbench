@@ -1,0 +1,14 @@
+{
+  "name": "New York City Airbnb Open Data",
+  "publisher": "Dgomonov on Kaggle; underlying collection credited to Inside Airbnb",
+  "source": "https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data",
+  "metadata_url": "https://www.kaggle.com/api/v1/datasets/view/dgomonov/new-york-city-airbnb-open-data",
+  "download": "https://www.kaggle.com/api/v1/datasets/download/dgomonov/new-york-city-airbnb-open-data?datasetVersionNumber=3",
+  "version": 3,
+  "snapshot_year": 2019,
+  "license": "CC0: Public Domain (publisher metadata)",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "csv": "AB_NYC_2019.csv",
+  "sha256": "e420db40ff10fcb40efc1b5b1648ee0b18a48f4e4537155cecc59fe95d18783a",
+  "raw_data_redistributed": false
+}

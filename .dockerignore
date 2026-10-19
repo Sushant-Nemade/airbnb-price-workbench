@@ -1,0 +1,14 @@
+.git/
+.venv/
+data/
+build/
+dist/
+**/__pycache__/
+**/*.egg-info/
+frontend/node_modules/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+src/airbnb_price/site/
+.env
+*.pem

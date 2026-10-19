@@ -1,0 +1,46 @@
+[project]
+name = "airbnb-price-workbench"
+version = "0.1.0"
+description = "Reproducible NYC 2019 price modeling with real browser ONNX inference"
+requires-python = ">=3.11"
+readme = "README.md"
+license = "MIT"
+dependencies = [
+  "numpy>=2.4,<3", "pandas>=3,<4", "scikit-learn>=1.7,<2",
+  "onnx>=1.19,<2", "skl2onnx>=1.19,<2", "onnxruntime>=1.23,<2",
+  "pydantic>=2.14,<3", "fastapi>=0.143.3,<0.144", "uvicorn>=0.54,<0.55",
+]
+
+[project.scripts]
+airbnb-prices = "airbnb_price.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=9,<10",
+    "ruff>=0.15,<0.16",
+    "build>=1.4,<2",
+    "pip-audit>=2.10,<3",
+    "twine>=6,<7",
+    "httpx2>=2.15.1",
+]
+
+[build-system]
+requires = ["setuptools>=82", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-data]
+airbnb_price = ["dataset.json", "artifacts/*", "site/*", "site/assets/*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 110
