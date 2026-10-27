@@ -58,6 +58,7 @@ jobs:
     env:
       OMP_NUM_THREADS: '1'
       OPENBLAS_NUM_THREADS: '1'
+      OPENBLAS_CORETYPE: Haswell
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
