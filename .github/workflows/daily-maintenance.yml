@@ -1,0 +1,23 @@
+name: Daily Reviewed Maintenance
+on:
+  schedule:
+    - cron: '0 12 * * *'
+      timezone: Europe/Berlin
+  workflow_dispatch:
+    inputs:
+      pilot:
+        description: Explicit manual pilot outside the shared daily selection
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  maintenance:
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    uses: Sushant-Nemade/autonomous-quality-redteam-harness/.github/workflows/portfolio-maintenance.yml@11586143dd21de383b969c5be09ae8808a5e3661
+    with:
+      controller_ref: 11586143dd21de383b969c5be09ae8808a5e3661
+      pilot: ${{ github.event_name == 'workflow_dispatch' && inputs.pilot }}
