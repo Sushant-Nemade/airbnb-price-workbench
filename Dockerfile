@@ -6,7 +6,7 @@ COPY frontend ./frontend
 RUN npm --prefix frontend ci --ignore-scripts && npm --prefix frontend run build
 
 FROM python:3.13-slim-bookworm AS builder
-COPY --from=ghcr.io/astral-sh/uv:0.13.0 /uv /bin/uv
+COPY --from=ghcr.io/astral-sh/uv:0.13.4 /uv /bin/uv
 WORKDIR /app
 COPY pyproject.toml uv.lock README.md LICENSE NOTICE.md ./
 COPY src ./src
