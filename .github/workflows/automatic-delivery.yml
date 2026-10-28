@@ -15,7 +15,7 @@ jobs:
       contents: write
       pull-requests: write
       actions: write
-    uses: Sushant-Nemade/autonomous-quality-redteam-harness/.github/workflows/maintenance-delivery.yml@321a857ef17570906f01bf61164d0b8e59147ecc
+    uses: Sushant-Nemade/autonomous-quality-redteam-harness/.github/workflows/maintenance-delivery.yml@32edbe2463f9bda3fb07bac7926382c2d0255aed
     with:
-      controller_ref: 321a857ef17570906f01bf61164d0b8e59147ecc
+      controller_ref: 32edbe2463f9bda3fb07bac7926382c2d0255aed
       completed_run_id: ${{ github.event_name == 'workflow_run' && format('{0}', github.event.workflow_run.id) || '' }}
