@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "repository": "Sushant-Nemade/airbnb-price-workbench",
+  "source_sha": "96282db54baac19a5a37b748dd223ec44a50912e",
+  "berlin_date": "2026-11-09",
+  "run_id": "42701246777",
+  "status": "no-safe-change",
+  "stages": [
+    {
+      "name": "baseline-unit-and-integration",
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "tests"
+      ],
+      "exit_code": 0,
+      "junit": {
+        "cases": 18,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 18
+      },
+      "evidence_sha256": "4e1e3b5129e1b801541b5f365040da5eaf4cf437e024351b4280bf9b7b231de3"
+    },
+    {
+      "name": "baseline-integration",
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "tests/test_runtime.py"
+      ],
+      "exit_code": 0,
+      "junit": {
+        "cases": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 3
+      },
+      "evidence_sha256": "4214051065f70ef381c5130672f4a2ee807c5d0ea48e579d8803a13019b9f353"
+    }
+  ],
+  "model": {
+    "name": "Qwen2.5-Coder-1.5B-Instruct-GGUF",
+    "revision": "f86cb2c1fa58255f8052cc32aeede1b7482d4361",
+    "sha256": "cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046",
+    "license": "Apache-2.0",
+    "paid_api_requests": 0
+  },
+  "policy": {
+    "human_merge_required": false,
+    "automatic_production_merge": true,
+    "max_repairs": 2,
+    "max_generation_calls": 7,
+    "per_call_token_limit": 1700,
+    "max_pipeline_seconds": 2700,
+    "independent_ci_required": true
+  },
+  "load": {
+    "repository": "Sushant-Nemade/airbnb-price-workbench",
+    "scope": "Owned local regression journeys; Docker network isolation is enforced by the controller, not this script",
+    "profile": "real local ONNX API contract and statelessness",
+    "node": "tests/test_runtime.py::test_actual_api_bounds_and_no_storage",
+    "requested_workflows": 1000,
+    "observed": 1000,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "concurrency": 1,
+    "duration_seconds": 18.535767945000003,
+    "cpu_process_seconds": 18.759925447,
+    "journey_p95_ms": 19.0,
+    "journey_p99_ms": 21.0,
+    "http_request_count": null,
+    "limitations": "Serial repeated regression journeys, NOT simultaneous users/browsers or a production capacity SLA. Test-defined mocks/fixtures remain in effect. HTTP requests are not independently counted.",
+    "passed": true
+  },
+  "planning": {
+    "decision": {
+      "status": "candidate",
+      "summary": "The function does not handle the case where the listing does not have a value for a specific attribute."
+    },
+    "provenance": {
+      "role": "planning",
+      "engine": "llama.cpp CPU, no-network container",
+      "max_output_tokens": 1700,
+      "model_repository": "Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF",
+      "model_revision": "f86cb2c1fa58255f8052cc32aeede1b7482d4361",
+      "model_sha256": "cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046",
+      "response_sha256": "824b59483dad8794e483277c2b76e4f5db1e683839af2a923204bb860ebc87ae",
+      "response_bytes": 165
+    }
+  },
+  "author": {
+    "role": "author",
+    "engine": "llama.cpp CPU, no-network container",
+    "max_output_tokens": 1700,
+    "model_repository": "Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF",
+    "model_revision": "f86cb2c1fa58255f8052cc32aeede1b7482d4361",
+    "model_sha256": "cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046",
+    "response_sha256": "c39d10104594870508a5638684bdac8f23346b9fea286ae9c691725a5c72275b",
+    "response_bytes": 804
+  },
+  "detail": "The function already handles the case where the listing does not have a value for a specific attribute.",
+  "duration_seconds": 761.746763978,
+  "generated_at_utc": "2026-11-09T21:31:31.827757+00:00",
+  "published_at_utc": "2026-11-09T21:31:48.735148+00:00",
+  "run_url": "https://github.com/Sushant-Nemade/airbnb-price-workbench/actions/runs/42701246777"
+}
