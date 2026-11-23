@@ -2,8 +2,8 @@
   "schema_version": 1,
   "repository": "Sushant-Nemade/airbnb-price-workbench",
   "source_sha": "96282db54baac19a5a37b748dd223ec44a50912e",
-  "berlin_date": "2026-11-16",
-  "run_id": "43953697103",
+  "berlin_date": "2026-11-23",
+  "run_id": "45279938782",
   "status": "no-safe-change",
   "stages": [
     {
@@ -22,7 +22,7 @@
         "skipped": 0,
         "passed": 18
       },
-      "evidence_sha256": "d9b729c3a73bb03a48efaa4910ca272c592414ed3e94360f3fdf4a175d25661e"
+      "evidence_sha256": "1d428cc5df3a8346d057e3dfe0cc1ca9826cc61b5d94631dae67acaad0a55aec"
     },
     {
       "name": "baseline-integration",
@@ -40,7 +40,7 @@
         "skipped": 0,
         "passed": 3
       },
-      "evidence_sha256": "5dcc01602fb3624aff750393784f626ffa642eabf90000b78338f4f2fc56f17c"
+      "evidence_sha256": "f6ab03b6ff9878512e85f8e7c3ba1ea75af806b2ea6afc96e7b8af7eaacd3877"
     }
   ],
   "model": {
@@ -70,10 +70,10 @@
     "errors": 0,
     "skipped": 0,
     "concurrency": 1,
-    "duration_seconds": 19.733891927000002,
-    "cpu_process_seconds": 20.849265016,
-    "journey_p95_ms": 19.05,
-    "journey_p99_ms": 22.0,
+    "duration_seconds": 17.377500388,
+    "cpu_process_seconds": 17.616039646999997,
+    "journey_p95_ms": 18.000000000000004,
+    "journey_p99_ms": 20.0,
     "http_request_count": null,
     "limitations": "Serial repeated regression journeys, NOT simultaneous users/browsers or a production capacity SLA. Test-defined mocks/fixtures remain in effect. HTTP requests are not independently counted.",
     "passed": true
@@ -105,8 +105,8 @@
     "response_bytes": 804
   },
   "detail": "The function already handles the case where the listing does not have a value for a specific attribute.",
-  "duration_seconds": 392.15190215300004,
-  "generated_at_utc": "2026-11-16T20:56:09.650891+00:00",
-  "published_at_utc": "2026-11-16T20:56:30.804206+00:00",
-  "run_url": "https://github.com/Sushant-Nemade/airbnb-price-workbench/actions/runs/43953697103"
+  "duration_seconds": 387.880508672,
+  "generated_at_utc": "2026-11-23T22:34:52.565574+00:00",
+  "published_at_utc": "2026-11-23T22:35:11.740305+00:00",
+  "run_url": "https://github.com/Sushant-Nemade/airbnb-price-workbench/actions/runs/45279938782"
 }
